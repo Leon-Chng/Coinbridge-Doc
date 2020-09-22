@@ -20,7 +20,8 @@
 - **Please send an email to `prop-dev@mingie.cn` after any update**
 
 ## Add Position Field
-1. **Insert into Table "PositionFields"**
+1. **Insert into Table "PositionFields"**  
+
 column | ValueType | Description 
 ----|----|----
 FieldName|string|Background field Name, main and unique key
