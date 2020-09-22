@@ -21,14 +21,14 @@
 
 ## Add Position Field
 1. **Insert into Table "PositionFields"**
-|Column | ValueType | Description |
-|----|----|----|
-|FieldName|string|Background field Name, main and unique key|
-|FieldLableName|string|The field lable to display; If no other `PositionFieldValues` settings, uses this to map data from exchange |
-|FieldDescription|string|Not used|
-|FieldIndex|int|Must be unique; Fields will show ordered by this index; Pokket alt coins should order by alpha|
-|AlwaysHidden|bool|True - Hide this field|
-|DecimalCount|int?|The decimal count to display, null = 0|
+|olumn | ValueType | Description 
+----|----|----
+FieldName|string|Background field Name, main and unique key|
+FieldLableName|string|The field lable to display; If no other `PositionFieldValues` settings, uses this to map data from exchange 
+FieldDescription|string|Not used|
+FieldIndex|int|Must be unique; Fields will show ordered by this index; Pokket alt coins should order by alpha
+AlwaysHidden|bool|True - Hide this field
+DecimalCount|int?|The decimal count to display, null = 0
 1. **\*Insert into Table "PositionFieldValues"**  
 This table is useful when  
 a) we need to show multiple data in one cell  
