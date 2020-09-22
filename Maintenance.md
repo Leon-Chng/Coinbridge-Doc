@@ -22,18 +22,20 @@
 ## Add Position Field
 1. **Insert into Table "PositionFields"**  
 
-column | ValueType | Description 
-----|----|----
-FieldName|string|Background field Name, main and unique key
-FieldLableName|string|The field lable to display; If no other `PositionFieldValues` settings, uses this to map data from exchange 
-FieldDescription|string|Not used
-FieldIndex|int|Must be unique; Fields will show ordered by this index; Pokket alt coins should order by alpha
-AlwaysHidden|bool|True - Hide this field
-DecimalCount|int?|The decimal count to display, null = 0
-1. **\*Insert into Table "PositionFieldValues"**  
+|column | ValueType | Description|
+|----|----|----|
+|FieldName|string|Background field Name, main and unique key|
+|FieldLableName|string|The field lable to display; If no other `PositionFieldValues` settings, uses this to map data from exchange|
+|FieldDescription|string|Not used|
+|FieldIndex|int|Must be unique; Fields will show ordered by this index; Pokket alt coins should order by alpha|
+|AlwaysHidden|bool|True - Hide this field|
+|DecimalCount|int?|The decimal count to display, null = 0|
+
+2. **\*Insert into Table "PositionFieldValues"**  
 This table is useful when  
 a) we need to show multiple data in one cell  
 b) the background data's key is different from the display name `FieldLableName` so we need some place to override the key setting
+
 |Column | ValueType | Description |
 |----|----|----|
 |FieldName|string|Same with the key in `PositionFields`|
@@ -46,6 +48,7 @@ b) the background data's key is different from the display name `FieldLableName`
 1. **Insert into Table "Exchanges" and "Brokers"** (Skip if exchange already existing)  
 `ExchangeName` and `BrokerName` must be same with enum `PlatformType`
 2. **Insert into Table "BrokerAccounts"**
+
 |Column | ValueType | Description |
 |----|----|----|
 |AccountId|int|Auto increased Id, the main key|
