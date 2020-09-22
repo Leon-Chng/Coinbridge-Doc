@@ -21,11 +21,11 @@
 
 ## Add Position Field
 1. **Insert into Table "PositionFields"**
-|olumn | ValueType | Description 
+column | ValueType | Description 
 ----|----|----
-FieldName|string|Background field Name, main and unique key|
+FieldName|string|Background field Name, main and unique key
 FieldLableName|string|The field lable to display; If no other `PositionFieldValues` settings, uses this to map data from exchange 
-FieldDescription|string|Not used|
+FieldDescription|string|Not used
 FieldIndex|int|Must be unique; Fields will show ordered by this index; Pokket alt coins should order by alpha
 AlwaysHidden|bool|True - Hide this field
 DecimalCount|int?|The decimal count to display, null = 0
